@@ -25,9 +25,42 @@ void main(List<String> args){
             color: Colors.white,
             //um unico item:
 
-            child: Column(
+            child:
               //varios widgets
-              children: const <Widget> [
+            //adicionar imagem
+            Image.asset(
+              "image/im1.jpg",
+              fit: BoxFit.cover,
+            )
+
+
+
+
+
+
+
+
+
+            /*    //alinhamentos
+              Row(
+                children: const  <Widget>[
+                  Text("T1"),
+                  Text("T2"),
+                  Text("T3")
+                ],
+                mainAxisAlignment: MainAxisAlignment.end, //start,spacebetween,end
+                crossAxisAlignment: CrossAxisAlignment.center, //com base na vertical
+              ),
+*/
+
+
+
+
+
+
+
+/*Column(
+              const <Widget> [
                   Text(
                     "Olá, mundo",
                     style: TextStyle(
@@ -43,8 +76,8 @@ void main(List<String> args){
 
                     ),
                   ),
-
-                //botão
+*/
+            /*    //botão
                 TextButton(onPressed: null, child: Text(
                                                       "botao",
                                                      style: TextStyle(
@@ -59,9 +92,6 @@ void main(List<String> args){
                   textAlign: TextAlign.justify,
                 ),
 
-                //alinhamentos
-
-
 
 
               ],
@@ -73,7 +103,7 @@ void main(List<String> args){
 
 
 
-
+*/
         //column permite colocar um widget abaixo do outro
           /*
              home: Column(
@@ -88,5 +118,5 @@ void main(List<String> args){
               color: Colors.white,
           ),*/
     )
-  );
+  ));
 }
